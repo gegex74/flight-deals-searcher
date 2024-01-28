@@ -27,7 +27,7 @@ class NotificationManager:
             )
         print(message.sid)
 
-    def send_emails(self, emails, message):
+    def send_email(self, emails, message):
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
             connection.login(smtp_my_email, smtp_my_password)

@@ -52,4 +52,4 @@ for destination_code in sheet_destinations:
         if flight.stop_overs > 0:
             message += f"\nFlight has {flight.stop_overs} stop over, via {flight.via_city}."
 
-        messenger.send_emails(emails, message)
+        messenger.send_email(emails, message)
